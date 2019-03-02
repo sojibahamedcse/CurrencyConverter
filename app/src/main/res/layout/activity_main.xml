@@ -1,137 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#026906"
+    android:paddingStart="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/header"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/imgViewId"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/currency"
+        tools:ignore="ContentDescription" />
 
 
     <EditText
-        android:id="@+id/et"
-        android:layout_width="152dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="250dp"
+        android:id="@+id/etId"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="280dp"
         android:ems="5"
-        android:inputType="numberDecimal" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/currency"/>
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:hint="@string/edtx"
+        android:inputType="numberDecimal"/>
 
     <Spinner
-        android:id="@+id/spin"
+        android:id="@+id/spinnerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/et"
-        android:layout_marginStart="101dp"
-        android:layout_marginLeft="101dp"
-        android:layout_marginTop="35dp"
-        android:layout_toEndOf="@+id/et"
-        android:layout_toRightOf="@+id/et" />
-
-
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="180dp"/>
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/spin"
-        android:layout_marginStart="-157dp"
-        android:layout_marginLeft="-157dp"
-        android:layout_marginTop="18dp"
-        android:layout_toEndOf="@+id/et"
-        android:layout_toRightOf="@+id/et"
-        android:text="@string/convert" />
-
-    <TextView
-        android:id="@+id/TextView1"
-        android:layout_width="116dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/btn"
-        android:layout_alignStart="@+id/spin"
-        android:layout_alignLeft="@+id/spin"
-        android:layout_marginStart="-17dp"
-        android:layout_marginLeft="-17dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="325dp"
         android:text="@string/usd"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
 
-    <TextView
-        android:id="@+id/TextView2"
-        android:layout_width="89dp"
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TextView1"
-        android:layout_alignStart="@+id/spin"
-        android:layout_alignLeft="@+id/spin"
-        android:layout_marginStart="-17dp"
-        android:layout_marginLeft="-17dp"
-        android:layout_marginTop="-11dp"
+        android:layout_marginTop="345dp"
+        android:text="@string/bitcoin"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="365dp"
+        android:text="@string/dinar"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="385dp"
+        android:text="@string/dirham"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="405dp"
         android:text="@string/euro"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/TextView3"
-        android:layout_width="72dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TextView2"
-        android:layout_alignStart="@+id/spin"
-        android:layout_alignLeft="@+id/spin"
-        android:layout_marginStart="-7dp"
-        android:layout_marginLeft="-7dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/rs"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/usd"
-        android:layout_width="64dp"
+        android:layout_marginTop="425dp"
+        android:text="@string/lira"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/TextView1"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="-1dp"
-        android:text="@string/zero"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/euro"
-        android:layout_width="49dp"
+        android:layout_marginTop="445dp"
+        android:text="@string/pound"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/TextView3"
-        android:layout_alignStart="@+id/usd"
-        android:layout_alignLeft="@+id/usd"
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="-1dp"
-        android:layout_marginBottom="-37dp"
-        android:text="@string/zero"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/inr"
-        android:layout_width="49dp"
+        android:layout_marginTop="465dp"
+        android:text="@string/ringgit"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/euro"
-        android:layout_alignLeft="@+id/euro"
-        android:layout_alignTop="@+id/TextView3"
-        android:layout_alignEnd="@+id/euro"
-        android:layout_alignRight="@+id/euro"
-        android:layout_marginStart="-1dp"
-        android:layout_marginLeft="-1dp"
-        android:layout_marginTop="-28dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:text="@string/zero"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
+        android:layout_marginTop="485dp"
+        android:text="@string/rupee"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>
