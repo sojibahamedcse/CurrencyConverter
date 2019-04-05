@@ -16,43 +16,102 @@
         android:layout_height="match_parent"
         android:text="@string/header"
         android:textSize="30sp"
-        android:layout_marginTop="5dp"
+        android:layout_margin="6dp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"/>
 
     <ImageView
         android:id="@+id/imgViewId"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="35dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="45dp"
         app:srcCompat="@drawable/currency"
         tools:ignore="ContentDescription" />
 
-
     <EditText
-        android:id="@+id/etId"
+        android:id="@+id/inputId"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="250dp"
         android:ems="5"
+        android:hint="@string/edtx"
+        android:inputType="numberDecimal"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        android:hint="@string/edtx"
-        android:inputType="numberDecimal"/>
+        />
+
+    <TextView
+        android:id="@+id/usdText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="305dp"
+        android:text="@string/usd"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/takaText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="335dp"
+        android:text="@string/taka"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dinarText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="365dp"
+        android:text="@string/dinar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/poundText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="395dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:text="@string/pound"
+         />
+
+    <TextView
+        android:id="@+id/euroText"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="425dp"
+        android:text="@string/euro"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+
+    />
 
     <Spinner
         android:id="@+id/spinnerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="180dp"/>
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginStart="180dp"
+        android:paddingLeft="5dp"/>
     <CheckBox
-        android:id="@+id/checkBox1"
+        android:id="@+id/usdCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="325dp"
+        android:layout_marginTop="300dp"
         android:text="@string/usd"
         android:textSize="20sp"
         android:textColor="#ffffff"
@@ -60,77 +119,52 @@
         />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/takaCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="345dp"
-        android:text="@string/bitcoin"
+        android:layout_marginTop="330dp"
+        android:text="@string/taka"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:textStyle="bold"/>
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/dinarCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="365dp"
+        android:layout_marginTop="360dp"
         android:text="@string/dinar"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:textStyle="bold"/>
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/poundCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="385dp"
-        android:text="@string/dirham"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="405dp"
-        android:text="@string/euro"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
-    <CheckBox
-        android:id="@+id/checkBox6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="425dp"
-        android:text="@string/lira"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
-    <CheckBox
-        android:id="@+id/checkBox7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="445dp"
+        android:layout_marginTop="390dp"
         android:text="@string/pound"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:textStyle="bold"/>
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/euroCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="465dp"
-        android:text="@string/ringgit"
+        android:layout_marginTop="420dp"
+        android:text="@string/euro"
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:textStyle="bold"/>
-    <CheckBox
-        android:id="@+id/checkBox9"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:layout_width="180dp"
+        android:id="@+id/btnId"
+        android:layout_marginLeft="80dp"
+        android:text="@string/btn"
+        android:background="#FFEB3B"
+        android:textSize="30sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="485dp"
-        android:text="@string/rupee"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"/>
+        android:layout_marginTop="460dp"
+        android:layout_marginStart="80dp" />
 
 
 </RelativeLayout>

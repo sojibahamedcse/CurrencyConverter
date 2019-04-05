@@ -2,24 +2,18 @@
     <string name="app_name">Currency Converter</string>
     <string name="header">Get your currency here:</string>
     <string name="usd">USD</string>
+    <string name="taka">TAKA</string>
     <string name="euro">EURO</string>
-    <string name="bitcoin">BitCoin</string>
-    <string name="dirham">Dirham</string>
-    <string name="lira">Lira</string>
-    <string name="dinar">Dinar</string>
-    <string name="pound">Pound</string>
-    <string name="rupee">Rupee</string>
-    <string name="ringgit">Ringgit</string>
-    <string name="yen">Yen</string>
+    <string name="dinar">DINAR</string>
+    <string name="pound">POUND</string>
     <string name="edtx">Enter value:</string>
+    <string name="btn">CHEAK</string>
+    <string name="txt">value</string>
     <string-array name="currency">
         <item>USD</item>
-        <item>EURO</item>
         <item>TAKA</item>
-        <item>YEN</item>
-        <item>Bitcoin</item>
-        <item>Dirham</item>
-        <item>Ringgit</item>
-        <item>Lira</item>
+        <item>DINAR</item>
+        <item>POUND</item>
+        <item>EURO</item>
     </string-array>
 </resources>
